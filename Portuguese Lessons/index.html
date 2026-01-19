@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Portuguese Lessons</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 50%, #006341 100%);
+            min-height: 100vh;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+        }
+
+        .category {
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            margin-bottom: 24px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .category-header {
+            background: linear-gradient(90deg, #006341 0%, #009739 100%);
+            color: #fff;
+            padding: 18px 24px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-icon {
+            font-size: 1.5rem;
+        }
+
+        .pdf-list {
+            list-style: none;
+        }
+
+        .pdf-item {
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .pdf-item:last-child {
+            border-bottom: none;
+        }
+
+        .pdf-link {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            text-decoration: none;
+            color: #333;
+            transition: background 0.2s ease;
+            gap: 14px;
+        }
+
+        .pdf-link:hover, .pdf-link:active {
+            background: #f0f7f0;
+        }
+
+        .pdf-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .pdf-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .pdf-name {
+            font-weight: 500;
+            color: #1a1a1a;
+            font-size: 1rem;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+
+        .pdf-topic {
+            color: #666;
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        .arrow {
+            color: #ccc;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .category-header {
+                padding: 14px 18px;
+                font-size: 1.1rem;
+            }
+
+            .pdf-link {
+                padding: 14px 18px;
+            }
+
+            .pdf-icon {
+                width: 38px;
+                height: 38px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aulas de Portugues</h1>
+            <p class="subtitle">Portuguese Lesson Materials</p>
+        </header>
+
+        <section class="category">
+            <div class="category-header">
+                <span class="category-icon">📚</span>
+                <span>Gramatica (Grammar)</span>
+            </div>
+            <ul class="pdf-list">
+                <li class="pdf-item">
+                    <a href="Gramatica/EdPRO_Preterito%20Imperfeito_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Preterito Imperfeito - Exercicios</div>
+                            <div class="pdf-topic">Past Imperfect Tense</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/EdPRO_Preterito%20perfeito%20vs%20Preterito%20imperfeito.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Preterito Perfeito vs Imperfeito</div>
+                            <div class="pdf-topic">Perfect vs Imperfect Past</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/EdPRO_Preterito%20perfeito%20vs%20Preterito%20imperfeito_Ex2.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Preterito Perfeito vs Imperfeito - Ex 2</div>
+                            <div class="pdf-topic">Additional Exercises</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/Presente%20vs%20Preterito%20Imperfeito_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Presente vs Preterito Imperfeito</div>
+                            <div class="pdf-topic">Present vs Past Imperfect</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/EDPro_V.%20Ser%20vs%20V.%20Estar_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Verbo Ser vs Estar</div>
+                            <div class="pdf-topic">To Be (permanent) vs To Be (temporary)</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/EdPRO_Emprego_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Emprego - Exercicios</div>
+                            <div class="pdf-topic">Employment Vocabulary</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/EdPro_Era%20uma%20vez_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Era uma vez - Exercicios</div>
+                            <div class="pdf-topic">Once Upon a Time - Storytelling</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Gramatica/Marcadores%20conversacionais_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Marcadores Conversacionais</div>
+                            <div class="pdf-topic">Conversational Markers</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <span class="category-icon">👂</span>
+                <span>Compreensao (Comprehension)</span>
+            </div>
+            <ul class="pdf-list">
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20escrita_Saude.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Escrita - Saude</div>
+                            <div class="pdf-topic">Reading Comprehension - Health</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20escrita_Tempo.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Escrita - Tempo</div>
+                            <div class="pdf-topic">Reading Comprehension - Weather/Time</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20escrita_Tempo%20(1).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Escrita - Tempo (2)</div>
+                            <div class="pdf-topic">Reading Comprehension - Weather/Time</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20escrita_Tempo%20(2).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Escrita - Tempo (3)</div>
+                            <div class="pdf-topic">Reading Comprehension - Weather/Time</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20escrita_PI_Cortesia.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Escrita - Cortesia</div>
+                            <div class="pdf-topic">Reading Comprehension - Politeness</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20oral_Miroslav.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Oral - Miroslav</div>
+                            <div class="pdf-topic">Listening Comprehension</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20oral_Miroslav%20(1).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Oral - Miroslav (2)</div>
+                            <div class="pdf-topic">Listening Comprehension</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Compreensao%20oral%20e%20producao%20escrita_Miroslav.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Compreensao Oral e Producao Escrita</div>
+                            <div class="pdf-topic">Listening & Writing</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Compreensao/Texto%203_Cortesia_ex.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Texto 3 - Cortesia</div>
+                            <div class="pdf-topic">Politeness Exercises</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <span class="category-icon">✏️</span>
+                <span>Exercicios (Exercises)</span>
+            </div>
+            <ul class="pdf-list">
+                <li class="pdf-item">
+                    <a href="Exercicios/Tempo_Liene%20e%20joao.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tempo - Liene e Joao</div>
+                            <div class="pdf-topic">Time/Tense Practice</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Exercicios/Tempo_Liene%20e%20joao%20(1).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tempo - Liene e Joao (2)</div>
+                            <div class="pdf-topic">Time/Tense Practice</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Exercicios/Tempo_Liene%20e%20joao%20(2).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tempo - Liene e Joao (3)</div>
+                            <div class="pdf-topic">Time/Tense Practice</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Exercicios/Tempo_Liene%20e%20joao%20(3).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tempo - Liene e Joao (4)</div>
+                            <div class="pdf-topic">Time/Tense Practice</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Exercicios/Tempo_Liene%20e%20joao%20(4).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tempo - Liene e Joao (5)</div>
+                            <div class="pdf-topic">Time/Tense Practice</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Exercicios/Tempo_Liene%20e%20joao%20(5).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tempo - Liene e Joao (6)</div>
+                            <div class="pdf-topic">Time/Tense Practice</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <div class="category-header">
+                <span class="category-icon">📖</span>
+                <span>Referencia (Reference)</span>
+            </div>
+            <ul class="pdf-list">
+                <li class="pdf-item">
+                    <a href="Referencia/Tabela%20de%20tempos%20verbais.pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Tabela de Tempos Verbais</div>
+                            <div class="pdf-topic">Verb Tense Reference Table</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+                <li class="pdf-item">
+                    <a href="Referencia/Portuguese%20AEP%20Beginner%20Course%20Refresher%20(Months-1-2).pdf" class="pdf-link" target="_blank">
+                        <div class="pdf-icon">PDF</div>
+                        <div class="pdf-info">
+                            <div class="pdf-name">Portuguese Beginner Course Refresher</div>
+                            <div class="pdf-topic">Months 1-2 Review</div>
+                        </div>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>25 Portuguese Lessons</p>
+        </footer>
+    </div>
+</body>
+</html>
